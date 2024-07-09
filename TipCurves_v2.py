@@ -97,9 +97,9 @@ def ProcessWVR3(file):
     Returns:
         date (string): date the data was taken on
         time (list of string): time the tip curve was started
-        angles (list of float): Elevation angle in degrees
-        temp_23 (list of float): Calibrated 23.8 GHz brightness temperature corresponding to the given angles
-        temp_31 (list of float): Calibrated 31.6 GHz brightness temperature corresponding to the given angles
+        angles (list of list of float): Elevation angle in degrees
+        temp_23 (list of list of float): Calibrated 23.8 GHz brightness temperature corresponding to the given angles
+        temp_31 (list of list of float): Calibrated 31.6 GHz brightness temperature corresponding to the given angles
     """
     #Reading in the data
     with open(file) as data_file:
